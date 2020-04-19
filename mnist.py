@@ -3,9 +3,10 @@ import tensorflow as tf
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-from google.colab.patches import cv2_imshow
+import cv2
 import math
 from scipy import ndimage
+
 #-------------------------------------------- LOADING THE DATASET AND SPLITTING INTO TRAINING AND TESTING----------------#
 mnist=tf.keras.datasets.mnist
 (X_train,Y_train),(X_test,Y_test)=mnist.load_data()
